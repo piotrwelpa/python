@@ -1,4 +1,5 @@
 import media
+import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toy that come to life",
@@ -14,12 +15,12 @@ avatar = media.Movie("Avatar",
 
 matrix = media.Movie("Matrix",
                      "Hacker figured out that he lives in simulation",
-                     "https://en.wikipedia.org/wiki/File:The_Matrix_Poster.jpg",
+                     "https://s-media-cache-ak0.pinimg.com/originals/b2/3a/7a/b23a7a293e5b2ba15c48d8320cdeeed8.jpg",
                      "https://www.youtube.com/watch?v=vKQi3bBA1y8")
 
 school_of_rock = media.Movie("School of Rock",
                              "Using rock music to learn",
-                             "https://en.wikipedia.org/wiki/File:School_of_Rock_Poster.jpg",
+                             "https://images-na.ssl-images-amazon.com/images/I/81m0ywBJ67L._SY445_.jpg",
                              "https://www.youtube.com/watch?v=5afGGGsxvEA")
 
 midnight_in_paris = media.Movie("Midnight in Paris",
@@ -32,3 +33,6 @@ hunger_games = media.Movie("Hunger Games",
                            "A really real reality show",
                            "http://cdn.collider.com/wp-content/uploads/the-hunger-games-poster.jpg",
                            "https://www.youtube.com/watch?v=mfmrPu43DF8")
+
+movies = [toy_story, avatar, matrix, school_of_rock, midnight_in_paris, hunger_games]
+fresh_tomatoes.open_movies_page(movies)
